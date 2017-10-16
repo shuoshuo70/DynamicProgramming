@@ -4,6 +4,7 @@ import java.util.Arrays;
  * Created by shuoshuo on 2017/10/16.
  */
 public class LIS {
+
     public static void main(String[] args) {
         int arr[] = {50, 3, 10, 7, 40, 80, 39};
         System.out.println(findLIS(arr));
