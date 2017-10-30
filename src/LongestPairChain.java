@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
+ * 最长的Pair链，先将Pair按start由小到大排序，之后dp，如果后面的尾比前面的头长，则+1
  * Created by shuoshuo on 2017/10/30.
  */
 public class LongestPairChain {
