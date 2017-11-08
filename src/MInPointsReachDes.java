@@ -8,6 +8,9 @@
  * 2. nums[i][j] < 0，dp[i][j] = Math.min(dp[i+1][j], dp[i][j+1]) - nums[i][j]
  * 3. nums[i][j] > 0, dp[i][j]在相减以后变得很小、甚至为负数，但是要保证生命值为1，所以dp[i][j]最小为1
  *                    dp[i][j] = Math.max(1, Math.min(dp[i+1][j], dp[i][j+1]) - nums[i][j])
+ * 保证生命值始终为正值是依靠dp[i][j] = Math.max(1, ***)保证的
+ * 用dp[i][j]代表进入（i，j）前的生命值，而不是用一个变量，因为（i，j）由（i+1,j）和（i，j+1)两个因素决定，不能
+ * 用一个全局的变量表示，dp数组是很好的实现方式
  * Created by shuoshuo on 2017/11/8.
  */
 
